@@ -1,0 +1,481 @@
+* {
+  box-sizing: border-box;
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+body, html {
+  height: 100%;
+  background-color: #fafafa;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #000000;
+}
+h1, h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1em;
+}
+h4 {
+  font-size: 2em;
+}
+h5 {
+  font-size: 1.5em;
+}
+h6 {
+  font-size: 1em;
+}
+p {
+  color: #2c2c2c;
+  line-height: 2rem;
+  font-weight: 400;
+}
+#wrapper {
+    height: 100%;
+    position: relative;
+}
+#intro {
+    height: 100%;
+    background-attachment: fixed;
+    background-image: url("../img/intro/hero-01-filter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-overlay {
+	height: 100%;
+	width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titles {
+	height: auto;
+	width: auto;
+	/* Make background of titles transparent white using RGB 
+	background: rgba(255, 255, 255, 0.8);*/
+}
+img.brand-logo {
+  width: 40vh;
+}
+/* Make logo fade in */
+.fade-in{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* Reusable class for adding flex content */
+.flex-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-content > div {
+  background-color: #fafafa;
+	margin: 5% 5% 0 5%;
+	width: 15%;
+	padding: 0;
+	/* box-shadow: 1px 1px 20px #dddddd; */
+}
+/* Homepage section one */
+.homepage-section.one {
+  height: auto;
+  width: 100%;
+  background-color: #fafafa;
+  margin: 0 auto;
+  padding: 10% 0 10% 0;
+}
+.homepage-section.one > div {
+  background-color: #fafafa;
+  padding: 2% 20%;
+  width: 100%;
+}
+/* Homepage section two */
+.homepage-section.two {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10% 0 10% 0;
+  background-image: url("../img/intro/hacksaw-filter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homepage-section.two > div {
+  padding: 2% 20%;
+  width: 100%;
+}
+/* Homepage section three */
+.homepage-section.three {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10% 0 10% 0;
+  background-image: url("../img/intro/tools-filter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Homepage people section */
+.homepage-section.three > div {
+  padding: 2% 20%;
+  width: 100%;
+}
+.homepage-section.people {
+  padding: 5% 2% 10% 2%;;
+}
+div.slide-up {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+div.slide-up p {
+  animation: 10s slide-up;
+  margin-top: 0%;
+}
+div.slide-up img {
+  width: 100%;
+}
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+/* Wrap titles and center horizontally */
+.section-title-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 5%;
+  text-align: center;
+}
+.section-title-container-dark {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 5%;
+  text-align: center;
+}
+.section-title-container-gradient {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 5%;
+  text-align: center;
+  background-image: linear-gradient(#050505, #fafafa);
+}
+
+
+h1.section-title, h2.section-title {
+  text-transform: uppercase;
+  color: #2e2e2e;
+  border-bottom: 3px solid #e25822;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1rem;
+  width: auto;
+  top: 2.5rem;
+  font-family: 'Bebas Neue', cursive;
+}
+h1.section-title-light, h2.section-title-light {
+  text-transform: uppercase;
+  color: #fafafa;
+  border-bottom: 3px solid #e25822;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1rem;
+  width: auto;
+  top: 2.5rem;
+  font-family: 'Bebas Neue', cursive;
+}
+h1.light-color,h2.light-color,p.light-color {
+  color: #ffffff;
+  line-height: 1.5rem;
+}
+p.light-color {
+  line-height: 2rem;
+  font-weight: 400;
+}
+/*-------------------------------
+ABOUT
+-------------------------------*/
+#about-intro {
+  height: 25%;
+  background-image: url("../img/about/about-intro-img.jpg");
+  background-position: center;
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+#main-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+/* Gallery section */
+#image-gallery {
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*-------------------------------
+RESOURCES
+-------------------------------*/
+#film-titles {
+	width: 100%;
+	padding: 5% 2.5% 0 2.5%;
+}
+#film-page-content {
+	height: auto;
+	width: 100%;
+	margin: 5% auto;
+	padding: 0;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#film-page-content > div {
+	background-color: #ffffff;
+	margin: 5% 2% 0 2%;
+	width: 46%;
+	padding: 0;
+  border: 1px solid #dddddd;
+  border-top: 3px solid #e25822;
+	box-shadow: 1px 1px 20px #dddddd;
+}
+h2.film-tile, h3.film-tile {
+  padding: 0 2%;
+  font-size: 1.2em;font-weight: 400;}
+.model-responsive{
+  overflow: hidden;
+  margin: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.model-responsive iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/*-------------------------------
+FOOTER
+-------------------------------*/
+footer {
+  background-color: #050505;
+  text-align: center;
+  padding: 10% 5%;
+}
+footer h4, footer, h5, footer p {
+  color: #fafafa;
+}
+/*-------------------------------
+HEADER CONTENT—ALL PAGES
+-------------------------------*/
+/* Top banner */
+header {
+  height: auto;
+}
+.banner {
+	width: 100%;
+  height: auto;
+  padding: 0;
+	/* padding-bottom: 2%; */
+	display: flex;
+	justify-content: center;
+	background-color: #040301;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+/* Navbar */
+/* Add a dark  background color to the top navigation */
+.topnav {
+    background-color: #040301;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    /* padding-top: 2%; */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #fafafa; /* Off white */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family:  'Monteserrat', sans-serif;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+  }
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    /* background-color: #ffffff; */
+    color: #fafafa; /* Off white */
+    /* border-bottom: 3px solid  #fafafa; /* Off white */
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: #fafafa; /* Off white */
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family:  'Monteserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #fafafa; /* Red */
+    color: #040301;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* Social media buttons */
+.share-buttons {
+	width: 100%;
+	margin: 0 auto;
+	padding: 1%;
+	animation-duration: 3s;
+	position: absolute;
+  bottom: 1em;
+  text-align: center;
+	/* Make background of titles transparent white using RGB
+	background: rgba(255, 255, 255, 0.4);
+	z-index: 998; */
+}
+.share-buttons a {
+	color: #ffffff; /* White */
+  font-size: 200%;
+}
+.share-buttons a:hover {
+	text-shadow: 10px 1px 10px #000000;
+	position: relative;
+	bottom: 1px;
+}
+/* Font Awesome icon size */
+.fa{
+  font-size: 1.2em !important;
+}
+/*
+.share-buttons a.fb {
+	color: #3b5998;
+	font-size: 200%;
+}
+.share-buttons a.twitter {
+	color: #00acee;
+	font-size: 200%;
+}
+.share-buttons a.youtube{
+	color: #c4302b;
+	font-size: 200%;
+}*/
+
+
+figure.mugshot {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+figcaption.mugshot-caption {
+  font-weight: 600;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
