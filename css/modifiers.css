@@ -1,0 +1,26 @@
+.hero {
+  background-image: url("../img/intro/hero-01-filter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar a {
+  color: #ffffff;
+}
+
+/* .navbar a:hover {
+  background: blue;
+} */
+.people {
+  text-align: center;
+}
+.bw {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 80%;
+}
