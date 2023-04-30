@@ -12,6 +12,7 @@ body, html {
 }
 h1,h2,h3,h4,h5,h6 {
   color: #000000;
+  font-weight: 400;
 }
 h1, h2 {
   font-size: 2em;
@@ -33,12 +34,20 @@ p {
   line-height: 2rem;
   font-weight: 400;
 }
+a {
+  color: #e25822;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:visited {
+  color: #8e2800;
+}
 #wrapper {
     height: 100%;
     position: relative;
 }
 #intro {
-    height: 100%;
+    height: 50%;
     background-attachment: fixed;
     background-image: url("../img/intro/hero-01-filter.jpg");
     background-position: center;
@@ -119,8 +128,10 @@ img.brand-logo {
   background-attachment: fixed;
 }
 .homepage-section.two > div {
-  padding: 2% 20%;
-  width: 100%;
+  padding: 2% 5%;
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
 }
 /* Homepage section three */
 .homepage-section.three {
@@ -136,8 +147,10 @@ img.brand-logo {
 }
 /* Homepage people section */
 .homepage-section.three > div {
-  padding: 2% 20%;
-  width: 100%;
+  padding: 2% 5%;
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
 }
 .homepage-section.people {
   padding: 5% 2% 10% 2%;;
@@ -191,26 +204,26 @@ div.slide-up img {
 
 
 h1.section-title, h2.section-title {
-  text-transform: uppercase;
   color: #2e2e2e;
   border-bottom: 3px solid #e25822;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0 auto;
   padding: 1rem;
   width: auto;
   top: 2.5rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 h1.section-title-light, h2.section-title-light {
-  text-transform: uppercase;
   color: #fafafa;
   border-bottom: 3px solid #e25822;
-  font-size: 3rem;
+  font-size: rem;
   margin: 0 auto;
   padding: 1rem;
   width: auto;
   top: 2.5rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 h1.light-color,h2.light-color,p.light-color {
   color: #ffffff;
@@ -231,10 +244,45 @@ ABOUT
   background-size: cover;
   background-attachment: fixed; */
 }
-#main-content {
+.main-content {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10% 0;
+}
+.people-card {
+  float: left;
+  height: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 20px #dddddd;
+  margin: 5% 0;
+}
+.about-column {
+  float: left;
+  padding: 5%;
+}
+.left {
+  width: 30%;
+}
+.right {
+  width: 70%;
+}
+.clearfix:after { 
+  content: " ";
+  display: block; 
+  height: 0; 
+  clear: both;
+}
+/* Clear floats */
+.clearfix {
+   background-color: #fafafa;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* Gallery section */
 #image-gallery {
@@ -269,7 +317,7 @@ RESOURCES
 	width: 100%;
 	padding: 5% 2.5% 0 2.5%;
 }
-#film-page-content {
+.film-page-content {
 	height: auto;
 	width: 100%;
 	margin: 5% auto;
@@ -279,7 +327,7 @@ RESOURCES
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-#film-page-content > div {
+.film-page-content > div {
 	background-color: #ffffff;
 	margin: 5% 2% 0 2%;
 	width: 46%;
@@ -287,6 +335,9 @@ RESOURCES
   border: 1px solid #dddddd;
   border-top: 3px solid #e25822;
 	box-shadow: 1px 1px 20px #dddddd;
+}
+h1.film-title {
+  margin: 2%;
 }
 h2.film-tile, h3.film-tile {
   padding: 0 2%;
@@ -306,6 +357,34 @@ h2.film-tile, h3.film-tile {
   position: absolute;
 }
 /*-------------------------------
+READING
+-------------------------------*/
+a.superlink {
+  width: auto;
+  height:auto;
+  margin-top: 5%;
+  padding: 5%;
+  background-color: #eeeeee;
+  border-left: 3px solid #8e2800;
+  display: block;
+  font-size: 1.5em;
+}
+a.superlink:hover {
+  width: auto;
+  height:auto;
+  margin-top: 5%;
+  padding: 5%;
+  border-left: 3px solid #8e2800;
+  background-color: #dddddd;
+  display: block;
+  font-size: 1.5em;
+  transition: ease-in-out 0.3s;
+}
+i.fa-arrow-circle-right {
+  font-size: 1.5rem;
+  margin-left: 0.5em;
+}
+/*-------------------------------
 FOOTER
 -------------------------------*/
 footer {
@@ -313,8 +392,12 @@ footer {
   text-align: center;
   padding: 10% 5%;
 }
-footer h4, footer, h5, footer p {
+footer h3, footer, h4, footer p {
   color: #fafafa;
+}
+a.footer {
+  color: #ffffff;
+  text-decoration: underline;
 }
 /*-------------------------------
 HEADER CONTENT—ALL PAGES
@@ -355,7 +438,7 @@ header {
     text-decoration: none;
     font-size: 1.2rem;
     font-family:  'Monteserrat', sans-serif;
-    text-transform: uppercase;
+    font-weight: 400;
     transition: background-color 0.2s ease;
   }
   /* Add an active class to highlight the current page */
@@ -465,7 +548,6 @@ header {
 	font-size: 200%;
 }*/
 
-
 figure.mugshot {
   width: 100%;
   text-align: center;
@@ -474,6 +556,7 @@ figure.mugshot {
 }
 figcaption.mugshot-caption {
   font-weight: 600;
+  padding: 1em;
 }
 .responsive {
   width: 100%;
