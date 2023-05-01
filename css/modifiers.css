@@ -1,10 +1,14 @@
 .hero {
-  background-image: url("../img/intro/hero-02-desaturated.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../img/intro/hero-02-desaturated.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-foot ul {
+.title {
+  color: hsl(152, 68%, 99%);
+}
+/* .hero-foot ul {
   justify-content: center;
 }
 .hero-foot ul li a {
@@ -15,15 +19,15 @@
   color: hsl(0, 2%, 75%);
   transform: scale(0.9);
   transition: ease-in-out 0.2s;
-}
-.navbar {
+} */
+/* .navbar {
   background: rgba(0, 0, 0, 0.9) !important;
   background-color: hsl(170, 97%, 15%) !important;
 }
 
 .navbar a {
   color: #ffffff;
-}
+} */
 
 /* .navbar a:hover {
   background: blue;
