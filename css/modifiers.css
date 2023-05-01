@@ -32,9 +32,9 @@
 /* .navbar a:hover {
   background: blue;
 } */
-.people {
+/* .people {
   text-align: center;
-}
+} */
 .bw {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -45,6 +45,11 @@
   background: hsl(152, 68%, 99%) !important;
 }
 
-/* .is-primary {
-  background-color: hsl(160, 51%, 49%) !important;
-} */
+.btn-primary {
+  background-color: hsl(168, 80%, 23%);
+  border: 0;
+}
+.btn-primary:hover {
+  background-color: hsl(170, 97%, 15%);
+  border: 0;
+}
