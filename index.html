@@ -38,56 +38,56 @@
   </head>
 
   <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img
+            src="img/logos/logo-white.webp"
+            alt="Viking Craft Network logo"
+            width="63"
+            height="63"
+          />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">Home</a>
+
+          <a class="navbar-item" href="about.html">About</a>
+          <a class="navbar-item" href="resources.html">Resources</a>
+          <a class="navbar-item" href="reading.html">Reading</a>
+          <a class="navbar-item" href="research.html">Research</a>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <!-- <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light"> Log in </a>
+          </div>
+        </div> -->
+      </div>
+    </nav>
+
     <section class="hero">
       <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-              <img
-                src="img/logos/vcn-logo-transparent-nav.png"
-                alt="Viking Craft Network logo"
-                width="63"
-                height="63"
-              />
-            </a>
-
-            <a
-              role="button"
-              class="navbar-burger"
-              aria-label="menu"
-              aria-expanded="false"
-              data-target="navbarBasicExample"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item" href="index.html">Home</a>
-
-              <a class="navbar-item" href="about.html">About</a>
-              <a class="navbar-item" href="resources.html">Resources</a>
-              <a class="navbar-item" href="reading.html">Reading</a>
-              <a class="navbar-item" href="research.html">Research</a>
-            </div>
-          </div>
-
-          <div class="navbar-end">
-            <!-- <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light"> Log in </a>
-              </div>
-            </div> -->
-          </div>
-        </nav>
-      </div>
+      <div class="hero-head"></div>
 
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
@@ -144,31 +144,159 @@
     </div>
     <!--Section one-->
     <section class="section is-medium">
-      <div class="content">
-        <h1 class="title is-one">Welcome to the Viking Craft Network</h1>
+      <div class="container is-max-desktop">
+        <div class="content">
+          <h1 class="title is-one">Welcome to the Viking Craft Network</h1>
+          <p class="pb-6 has-text-weight-medium">
+            A place to explore up-to-date information on Viking-age crafts, and
+            reliable, easy-to-follow resources.
+          </p>
 
-        <p>
-          Here you will find up-to-date information on Viking-age crafts as it
-          emerges from our research, and reliable, easy-to-follow resources.
-        </p>
-        <p>
-          The project emerges from a collaboration between archaeologists at the
-          universities of York, Aarhus, and Oslo, and experienced historic
-          craftspeople.
-        </p>
-        <p>
-          The aim is to provide a way into the field via resources and
-          information that can be relied upon for their accuracy and rigour. Our
-          resources should be helpful in teaching from KS2 (Vikings) up to
-          postgraduate degrees, and will be of use to anyone with an interest in
-          learning more about these crafts.
-        </p>
+          <div class="tile is-ancestor">
+            <div class="tile">
+              <div class="card">
+                <div class="card-image">
+                  <!-- <figure class="image is-16by9">
+                  <img src="img/intro/gallery-006.webp" />
+                </figure> -->
+                  <figure class="image is-16by9">
+                    <img
+                      src="img/intro/gallery-006.webp"
+                      alt="Placeholder image"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">Information</p>
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br />
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile">
+              <!-- Add content or other tiles -->
+            </div>
+            <div class="tile">
+              <!-- Add content or other tiles -->
+            </div>
+          </div>
+
+          <div class="tile is-ancestor">
+            <div class="tile is-4 is-vertical is-parent">
+              <div class="tile is-child box has-background-info-light">
+                <p class="subtitle has-text-weight-semibold">Information</p>
+                <i class="fa-light fa-cubes-stacked"></i>
+                <hr />
+                <p>
+                  Find up-to-date information on Viking-age crafts as it emerges
+                  from our research.
+                </p>
+              </div>
+              <div class="tile is-child box has-background-info-light">
+                <p class="subtitle has-text-weight-semibold">Research</p>
+                <i class="fas fa-book-open"></i>
+                <hr />
+                <p>Read our latest publications.</p>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child box has-background-info-light">
+                <p class="subtitle has-text-weight-semibold">Resources</p>
+                <i class="fa-light fa-cubes-stacked"></i>
+                <hr />
+                <p>
+                  Expore our diverse range of multimedia resources, carfully
+                  curated to demonstrate a breadth of Viking crafts.
+                </p>
+                <!-- <figure class="image is-16by9">
+                  <img src="img/intro/gallery-006.webp" />
+                </figure> -->
+              </div>
+            </div>
+          </div>
+
+          <a class="button is-primary" href="about.html">Learn more</a>
+
+          <p>
+            The project emerges from a collaboration between archaeologists at
+            the universities of York, Aarhus, and Oslo, and experienced historic
+            craftspeople.
+          </p>
+          <p>
+            The aim is to provide a way into the field via resources and
+            information that can be relied upon for their accuracy and rigour.
+            Our resources should be helpful in teaching from KS2 (Vikings) up to
+            postgraduate degrees, and will be of use to anyone with an interest
+            in learning more about these crafts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-medium">
+      <div class="container is-max-desktop">
+        <div class="content">
+          <h2 class="title">People</h2>
+          <div class="people">
+            <div class="columns">
+              <div class="column">
+                <figure class="image bw">
+                  <img
+                    src="img/people/steve-ashby.png"
+                    alt="Steve Ashby"
+                    width="300"
+                    height="300"
+                  />
+                  <figcaption>Steve Ashby</figcaption>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image bw">
+                  <img
+                    src="img/people/soren-sindbaek.png"
+                    alt="S&#248;ren Sindbaek"
+                    width="300"
+                    height="300"
+                  />
+                  <figcaption>S&#248;ren Sindbaek</figcaption>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image bw">
+                  <img
+                    src="img/people/unn-pedersen.png"
+                    alt="Unn Pedersen"
+                    width="300"
+                    height="300"
+                  />
+                  <figcaption>Unn Pedersen</figcaption>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image bw">
+                  <img
+                    src="img/people/jim-glazzard.png"
+                    alt="Jim Glazzard"
+                    width="300"
+                    height="300"
+                  />
+                  <figcaption>Jim Glazzard</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <figure class="image">
       <img
-        src="img/intro/hands-of-the-maker-optimised.png"
+        src="img/intro/hands-of-the-maker-optimised.webp"
         alt="Hands holding a Viking comb"
         width="100%"
       />
@@ -176,88 +304,31 @@
 
     <!--Section two-->
     <section class="section is-medium">
-      <div class="content">
-        <h2 class="subtitle">About the project</h2>
-        <p>
-          The Viking Craft Network is a collaboration between academics,
-          conservators and historic craftworkers in Denmark, Norway and the UK,
-          intended to improve the popular understanding of, and engagement with,
-          Viking-Age craft practice.
-        </p>
-        <p>
-          This website provides an online hub for communication, through which
-          we will disseminate digital resources, blogs, podcasts and videos
-          alongside traditional research outputs. Our intention is that this
-          will provide a one-stop shop for universities and their students,
-          school teachers and children, museums and heritage institutions,
-          re-enactors and historic craftworkers.
-        </p>
-      </div>
-    </section>
+      <div class="container is-max-desktop">
+        <div class="content">
+          <h2 class="subtitle">What is the Viking Craft Network?</h2>
+          <p>
+            The Viking Craft Network is a collaboration between academics,
+            conservators and historic craftworkers in Denmark, Norway and the
+            UK. The intention is to improve the popular understanding of, and
+            engagement with, Viking-Age craft practice.
+          </p>
+          <p>
+            This website provides an online hub for communication, through which
+            we will disseminate digital resources, blogs, podcasts and videos
+            alongside traditional research outputs. Our intention is that this
+            will provide a one-stop shop for universities and their students,
+            school teachers and children, museums and heritage institutions,
+            re-enactors and historic craftworkers.
+          </p>
 
-    <!--Section three-->
-    <section class="section is-medium">
-      <div class="content">
-        <h2 class="subtitle">Important information</h2>
-        <blockquote>
-          We accept no liability for injury or damage incurred in the course of
-          practical craftworking. These resources are provided for informational
-          use only, and should not be used as instructional manuals. Appropriate
-          training is vital in learning a new craft.
-        </blockquote>
-      </div>
-    </section>
-
-    <section class="section is-medium">
-      <div class="content">
-        <h2 class="title">People</h2>
-        <div class="people">
-          <div class="columns">
-            <div class="column">
-              <figure class="image bw">
-                <img
-                  src="img/people/steve-ashby.png"
-                  alt="Steve Ashby"
-                  width="300"
-                  height="300"
-                />
-                <figcaption>Steve Ashby</figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure class="image bw">
-                <img
-                  src="img/people/soren-sindbaek.png"
-                  alt="S&#248;ren Sindbaek"
-                  width="300"
-                  height="300"
-                />
-                <figcaption>S&#248;ren Sindbaek</figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure class="image bw">
-                <img
-                  src="img/people/unn-pedersen.png"
-                  alt="Unn Pedersen"
-                  width="300"
-                  height="300"
-                />
-                <figcaption>Unn Pedersen</figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure class="image bw">
-                <img
-                  src="img/people/jim-glazzard.png"
-                  alt="Jim Glazzard"
-                  width="300"
-                  height="300"
-                />
-                <figcaption>Jim Glazzard</figcaption>
-              </figure>
-            </div>
-          </div>
+          <h2 class="subtitle">Important information</h2>
+          <blockquote>
+            We accept no liability for injury or damage incurred in the course
+            of practical craftworking. These resources are provided for
+            informational use only, and should not be used as instructional
+            manuals. Appropriate training is vital in learning a new craft.
+          </blockquote>
         </div>
       </div>
     </section>

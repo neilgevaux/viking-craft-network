@@ -1,12 +1,24 @@
 .hero {
-  background-image: url("../img/intro/hero-01-filter.jpg");
+  background-image: url("../img/intro/hero-02-desaturated.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.hero-foot ul {
+  justify-content: center;
+}
+.hero-foot ul li a {
+  color: hsl(0, 100%, 100%);
+  font-size: 2rem;
+}
+.hero-foot ul li a:hover {
+  color: hsl(0, 2%, 75%);
+  transform: scale(0.9);
+  transition: ease-in-out 0.2s;
+}
 .navbar {
   background: rgba(0, 0, 0, 0.9) !important;
+  background-color: hsl(170, 97%, 15%) !important;
 }
 
 .navbar a {
@@ -24,3 +36,11 @@
   filter: grayscale(100%);
   width: 80%;
 }
+
+.has-background-info-light {
+  background: hsl(152, 68%, 99%) !important;
+}
+
+/* .is-primary {
+  background-color: hsl(160, 51%, 49%) !important;
+} */
